@@ -999,7 +999,7 @@ p {
   overflow: hidden;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 460px) {
   .video-wrapper {
     margin-right: 0;
   }

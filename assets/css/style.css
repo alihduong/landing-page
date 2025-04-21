@@ -872,6 +872,30 @@ p {
     margin-top: 20px;
   }
 }
+@media (max-width: 768px) {
+  .footer-widget .row > div {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-collapse {
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+}
+@media (max-width: 768px) {
+  #mask .row {
+    flex-direction: column;
+  }
+  #mask .order-lg-last {
+    order: -1;
+    margin-top: 30px !important;
+    margin-left: 0 !important;
+  }
+  #mask .video-wrapper {
+    width: 100% !important;
+  }
+}
 
 .single-services .services-content .more {
   margin-top: 30px;
@@ -2224,3 +2248,61 @@ p {
 .pb-225 {
   padding-bottom: 225px;
 }
+/* Mobile Emergency Fix */
+@media (max-width: 767px) {
+  body {
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .container {
+    min-width: 100% !important;
+  }
+
+  .col-lg-6, .col-md-6 {
+    width: 100% !important;
+    float: none !important;
+    padding: 0 15px !important;
+  }
+
+  .video-wrapper, video {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .header-hero-image img {
+    width: 100% !important;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  #mask .about-content {
+    padding-left: 30px;
+  }
+}
+/* Thêm vào file style.css */
+html, body {
+  width: 100% !important;
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+.container {
+  max-width: 100% !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.row {
+  margin-right: -15px !important;
+  margin-left: -15px !important;
+}
+/** {*/
+/*  outline: 1px solid red !important;*/
+/*}*/
